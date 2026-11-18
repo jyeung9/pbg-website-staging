@@ -17,9 +17,9 @@ Run `python3 build.py`. This generates `dist/index.html` and `pbg-github-pages-s
 
 Source is maintained on `main`. GitHub Pages serves the generated files on `gh-pages`, at https://jyeung9.github.io/pbg-website-staging/. Publish only a build generated from the reviewed source commit. The site requests no indexing; it is publicly accessible. No custom domain is configured and the Squarespace site remains separate.
 
-## Review policy
+## Working rules
 
-Before future changes to the approved local site or public deployment, prepare an isolated preview, verify it, show the user the visual result and change summary, and wait for approval. Do not edit generated output or maintain parallel HTML copies.
+Rules for changing, previewing and publishing this project are in `AGENTS.md` (also loaded by Claude through `CLAUDE.md`). Lasting decisions are logged in `DECISIONS.md`.
 
 ## Content provenance
 
