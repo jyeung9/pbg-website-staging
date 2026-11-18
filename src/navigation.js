@@ -21,3 +21,24 @@ const mobileToggle = document.querySelector('.mobile-toggle');
         item.classList.remove('open'); item.querySelector('.nav-trigger').setAttribute('aria-expanded','false');
       });
     });
+    const homeTitle = document.title;
+    const showRoute = () => {
+      const target = location.hash.length > 1 ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+      const page = target && target.classList.contains('resource-page') ? target : null;
+      document.title = page ? page.dataset.title + ' — Partnership Behavior Group' : homeTitle;
+      document.querySelectorAll('.nav-dropdown a').forEach(link => {
+        if (page && link.getAttribute('href') === '#' + page.id) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('open'); item.querySelector('.nav-trigger').setAttribute('aria-expanded','false');
+      });
+      if (page) {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        page.querySelector('h1').focus({ preventScroll: true });
+      } else if (target) {
+        target.scrollIntoView({ behavior: 'instant' });
+      }
+    };
+    window.addEventListener('hashchange', showRoute);
+    if (location.hash) showRoute();

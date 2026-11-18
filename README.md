@@ -23,4 +23,4 @@ Rules for changing, previewing and publishing this project are in `AGENTS.md` (a
 
 ## Content provenance
 
-Original PBG photos and logo were supplied with the staging package. Insurance wording, photo, and four insurer logos were retrieved from https://www.partnershipbehavior.com/insurance-groups on November 18, 2026. Careers follows the Indeed listing linked by the PBG homepage. The intake link remains PBG’s Microsoft Forms destination.
+Original PBG photos and logo were supplied with the staging package. Insurance wording, photo, and four insurer logos were retrieved from https://www.partnershipbehavior.com/insurance-groups on November 18, 2026. The six Parent Resource Center and About Us pages (Play-Based Therapy, Parent Coaching & Family Support, How Many Hours of Support Are Right for My Child?, What Is ABA?, Meet Our Clinical Lead, Why We Started Partnership Behavior Group) use wording retrieved from the matching pages on https://www.partnershipbehavior.com on November 18, 2026, and are served on this site rather than linking out. Careers follows the Indeed listing linked by the PBG homepage. The intake link remains PBG’s Microsoft Forms destination.
